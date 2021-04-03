@@ -1,0 +1,23 @@
+[
+  {
+    "id": "f7247aa7-d953-4ccf-bbac-7d1447a3af8b",
+    "name": "ATS",
+    "releaseYear": 2021,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "fc0bc0cb-9f44-4fd0-86cb-8ce22ade185f",
+    "name": "Accord",
+    "releaseYear": 2020,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "9589df23-bb2d-442d-a511-ded6bae44f40",
+    "name": "Civic",
+    "releaseYear": 2021,
+    "available": true,
+    "gasAvailable": true
+  }
+]
