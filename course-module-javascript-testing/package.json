@@ -3,14 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx mocha -w --parallel **/**/*.test.js",
+    "test:cov": "npx nyc npx mocha --parallel **/**/*.test.js",
     "seed": "node ./seed"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "faker": "^5.5.2"
+    "chai": "4",
+    "faker": "^5.5.2",
+    "mocha": "8",
+    "nyc": "15",
+    "sinon": "9"
   }
 }
