@@ -27,4 +27,4 @@ assert.throws(() => myObj.add.apply({ arg1: 10, arg2: 20 }, [100]), {
 
 // utilizing reflect
 const result = Reflect.apply(myObj.add, { arg1: 50, arg2: 60 }, [100]);
-assert.deepStrictEqual(result, 210)
+assert.deepStrictEqual(result, 210);
