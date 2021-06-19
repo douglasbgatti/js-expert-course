@@ -1,0 +1,38 @@
+regex101.com
+^\d{3}.\d{3}.\d{3}-\d{2}$
+
+123.456.789-01
+654.987.321-21
+321-654-987-98
+
+replace [.-] empty
+--------------------------------------------------
+
+
+Gatti, Douglas
+Santos, Luiz
+Smith, John
+----  ^(\w+),\s(\w+)$
+---- replace {firstName: "$2", lastname: "$1"}
+
+{firstName: "Douglas", lastname: "Gatti"}
+{firstName: "Luiz", lastname: "Santos"}
+{firstName: "John", lastname: "Smith"}
+
+-------------------------------------------------
+
+The developer [Douglas Gatti](https://douglasbgatti.com) has 7 years of experience. Check out  his [Github](https://github.com/douglasbgatti) or his [Linkedin](http://www.linkedin.com/in/douglasbgatti/)
+
+Dont forget to check out his [Facebook](https://facebook.com) and his instagram [Instagram](https://instagram.com)
+
+Lets go!
+
+---- \[(.*?)\]\(([http | https].*?)\)
+---- replace 
+    <a href="$2">$1</a>
+
+The developer <a href="https://douglasbgatti.com">Douglas Gatti</a> has 7 years of experience. Check out  his <a href="https://github.com/douglasbgatti">Github</a> or his <a href="http://www.linkedin.com/in/douglasbgatti/">Linkedin</a>
+
+Dont forget to check out his <a href="https://facebook.com">Facebook</a> and his instagram <a href="https://instagram.com">Instagram</a>
+
+Lets go!

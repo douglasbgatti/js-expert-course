@@ -1,3 +1,5 @@
+"use strict";
+
 const assert = require("assert");
 
 function* calculation(arg1, arg2) {
